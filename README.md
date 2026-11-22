@@ -10,7 +10,7 @@ On top of the engine, the project measures what inference optimizations actually
 - **INT8 dynamic quantization** reduces model size by 33.9% in the tested configuration. A per-layer sweep shows the MLP layers cause most of the quantization error. On this CPU at batch size 1, INT8 ran about 16% slower than FP32.
 - A **Streamlit demo** lets you toggle the cache and quantization, inspect next-token probabilities, and compare cached and uncached generation live.
 
-Full numbers and caveats are in [`PERFORMANCE.md`](PERFORMANCE.md).
+Full numbers and caveats are in [`PERFORMANCE.md`](docs/performance.md).
 
 **Environment:** Windows 11, Python 3.13.9, PyTorch 2.11.0 (CPU), Intel Core i7-13620H.
 
