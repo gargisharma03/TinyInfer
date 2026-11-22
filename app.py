@@ -5,6 +5,13 @@ import pandas as pd
 import streamlit as st
 import torch
 from transformers import AutoTokenizer
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent
+SRC_DIR = ROOT_DIR / "src"
+
+sys.path.insert(0, str(SRC_DIR))
 from tinyinfer.model import TinyInferGPT2
 from tinyinfer.weights import load_gpt2_weights
 from tinyinfer.quantization import quantize_model_dynamic
